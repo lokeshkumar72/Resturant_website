@@ -4,10 +4,10 @@ A responsive and visually appealing **Restaurant Website** built using **HTML, C
 
 ## 🌐 Live Demo
 
-🔗 **Live Demo:** Add your deployed website link here
+🔗 **Live Demo:** https://restaurant-website-v2-nu.vercel.app/
 
 🔗 **GitHub Repository:**
-https://github.com/lokeshkumar72/Resturantwebsite
+https://github.com/lokeshkumar72/Resturant_website
 
 ---
 
@@ -15,19 +15,19 @@ https://github.com/lokeshkumar72/Resturantwebsite
 
 ### 🏠 Home Page
 
-![Home Page](images/homepage.png)
+![Home Page](./screenshots/homepage.png)
 
 ### 🍴 Menu Page
 
-![Menu Page](images/menu.png)
+![Menu Page](./screenshots/food%20menu.png)
 
 ### ℹ️ About Page
 
-![About Page](images/about.png)
+![About Page](./screenshots/about%20us.png)
 
 ### 📅 Booking Page
 
-![Booking Page](images/booking.png)
+![Booking Page](./screenshots/book%20table.png)
 
 > Add these screenshots to your `images` folder and update the filenames above if your actual screenshot names are different.
 
@@ -62,7 +62,7 @@ https://github.com/lokeshkumar72/Resturantwebsite
 ## 📂 Project Structure
 
 ```text
-Resturantwebsite/
+Resturant_website/
 │
 ├── favicon_io/
 │
@@ -122,13 +122,13 @@ CSS media queries and flexible layouts are used to improve the experience across
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/lokeshkumar72/Resturantwebsite.git
+git clone https://github.com/lokeshkumar72/Resturant_website.git
 ```
 
 ### 2. Open the Project
 
 ```bash
-cd Resturantwebsite
+cd Resturant_website
 ```
 
 ### 3. Run the Website
