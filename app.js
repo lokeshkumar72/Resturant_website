@@ -16,6 +16,19 @@ const signup = document.querySelector('.signup');
 const signin = document.querySelector('.signin');
 const signlogo = document.querySelector('#user-lap');
 const signlogomb = document.querySelector('#user-mb');
+const subscribeSignup = document.querySelector('#subscribe-signup');
+
+function showFormMessage(form, message) {
+    let feedback = form.querySelector('.form-message');
+
+    if (!feedback) {
+        feedback = document.createElement('p');
+        feedback.className = 'form-message';
+        form.appendChild(feedback);
+    }
+
+    feedback.textContent = message;
+}
 
 
 // When search icon (tablet/mobile) in hidden header bar clicked it will show the search bar.
@@ -67,6 +80,43 @@ signlogomb.addEventListener('click', () => {
         signbox.style.transform = 'scale(1)';
     }, 100);
 })
+
+// Open the existing sign-up form from the newsletter subscription button.
+if (subscribeSignup) {
+    subscribeSignup.addEventListener('click', () => {
+        signup.style.display = 'block';
+        signin.style.display = 'none';
+        sign.style.display = 'flex';
+        setTimeout(() => {
+            signbox.style.transform = 'scale(1)';
+        }, 100);
+    });
+}
+
+// Demo-only form feedback. No account details are stored or sent.
+document.querySelectorAll('.signup form').forEach((form) => {
+    form.querySelectorAll('input:not([type="submit"])').forEach((input) => {
+        input.required = true;
+    });
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        showFormMessage(form, 'Thanks! Your sign-up request was received.');
+        form.reset();
+    });
+});
+
+document.querySelectorAll('.signin form').forEach((form) => {
+    form.querySelectorAll('input:not([type="submit"])').forEach((input) => {
+        input.required = true;
+    });
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        showFormMessage(form, 'Signed in successfully (demo mode).');
+        form.reset();
+    });
+});
 
 //This is to toggle between sign in/sign up forms
 tosignin.addEventListener('click', () => {

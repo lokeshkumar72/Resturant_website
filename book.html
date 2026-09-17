@@ -3,14 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="C:\Users\lokesh kumar singh\Desktop\resturant website\images/logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="book.css">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon_io (1)/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon/favicon.svg" type="image/x-icon">
     <title>Food website | Book Table</title>
 </head>
 
@@ -25,13 +23,13 @@
                     <h3>Book Your Table</h3>
                     <form action="#">
                         <label for="name">Name</label></br>
-                        <input type="text" placeholder="Full Name" name="name" id=""></br>
+                        <input type="text" placeholder="Full Name" name="name" id="" required></br>
                         <label for="email-table">E-mail</label></br>
-                        <input type="email" placeholder="E-mail" name="email-table" id=""></br>
+                        <input type="email" placeholder="E-mail" name="email-table" id="" required></br>
                         <label for="date">Date</label></br>
-                        <input type="date" name="date" id=""></br>
+                        <input type="date" name="date" id="" required></br>
                         <label for="time">Time</label></br>
-                        <input type="time" name="time" id=""></br>
+                        <input type="time" name="time" id="" required></br>
                         <input type="submit" value="Book Now">
                     </form>
                 </div>
@@ -39,7 +37,19 @@
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="footer-1">
+            <address class="contact-details">
+                <a href="mailto:lokeshbsr544@gmail.com">Email: lokeshbsr544@gmail.com</a>
+                <p><strong>Mr. Lokesh Kumar Singh</strong><br>Alpha II, Greater Noida, Uttar Pradesh<br>India</p>
+            </address>
+        </div>
+        <div class="footer-2">
+            <img src="./images/logo.svg" alt="Chops & Hops logo">
+        </div>
+    </footer>
 
+    <script src="booking.js"></script>
 </body>
 
 </html>
